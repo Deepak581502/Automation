@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utility.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="url" value="https://erail.in/"/>
+    <classes>
+      <class name="testCase.Test_User_Case2">
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+        <methods>
+          <include name="login_Testcase_valid" invocation-numbers="1"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCase.Test_User_Case2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
